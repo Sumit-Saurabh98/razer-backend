@@ -18,7 +18,7 @@ app.use(express.json({limit: '10mb'}));
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(cors({
-    origin: "https://reflex-client.vercel.app",
+    origin: ["https://reflex-client.vercel.app", "http://localhost:3000"],
     credentials: true
 }));
 
